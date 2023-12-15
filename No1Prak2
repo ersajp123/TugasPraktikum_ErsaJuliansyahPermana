@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+int first_Value = 10;
+int second_Value = 8;
+
+//menukar nilai kedua variabel menggunakan temp (variabel tambahan)
+
+int temp = first_Value;
+first_Value = second_Value;
+second_Value = temp;
+
+//output penukaran kedua variabel dengan temp(variabel tambahan)
+cout<<"Menukar kedua variabel dengan temp "<<endl;
+cout <<"First Value :"<< first_Value << endl;
+cout <<"Second Value :"<< second_Value << endl <<endl;
+
+
+int Nilai_pertama = 10;
+int Nilai_kedua = 8;
+
+//menukar value kedua variabel tanpa temp (variabel tambahan)
+
+Nilai_pertama = Nilai_pertama + Nilai_kedua;
+Nilai_kedua = Nilai_pertama - Nilai_kedua;
+Nilai_pertama = Nilai_pertama - Nilai_kedua;
+
+//output penukaran kedua variabel tanpa temp
+cout <<"Menukar kedua variabel tanpa temp "<<endl;
+cout <<"Nilai Pertama:"<< Nilai_pertama << endl;
+cout <<"Nilai Kedua:"<< Nilai_kedua << endl <<endl;
+
+}
