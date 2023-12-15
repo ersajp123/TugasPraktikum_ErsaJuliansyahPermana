@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+    int main(){
+    int M, N;
+
+
+    cout << "Bebek Pak Tatang:" ; cin>> M;
+
+    cout << "Dibagikan Kepada Temannya:" ; cin>> N;
+
+    int JumlahBebekYangAkanDibagikan = M/N;
+    int SisaBebek = M%N;
+
+    cout << "Jumlah Bebek Yang Akan Dibagikan Kepada Teman Temannya:" << JumlahBebekYangAkanDibagikan << endl;
+    cout << "Jumlah Sisa Bebek:" << SisaBebek ;
+
+    return 0;
+}
