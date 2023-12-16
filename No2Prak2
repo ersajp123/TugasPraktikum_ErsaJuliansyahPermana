@@ -2,13 +2,15 @@
 using namespace std;
 
     int main(){
-    int M, N;
+    int M, N; //M = Bebek Pak tatang, N = Bebek yang dibagi
 
-
+    //Jumlah bebek Pak Tatang
     cout << "Bebek Pak Tatang:" ; cin>> M;
 
+    //Jumlah Bebek yang dibagi
     cout << "Dibagikan Kepada Temannya:" ; cin>> N;
 
+    //Rumus pembagian
     int JumlahBebekYangAkanDibagikan = M/N;
     int SisaBebek = M%N;
 
