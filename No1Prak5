@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+
+    // Fungsi untuk cek bilangan prima
+    bool isPrima(int n) {
+      if(n <= 1) return false;
+      for(int i = 2; i < n; i++) {
+        if(n % i == 0) return false;
+      }
+      return true;
+    }
+    
+    // Fungsi untuk tampil bilangan ganjil
+    void printGanjil(int limit) {
+      int sum = 0;
+      cout << "Bilangan Ganjil: \n";
+      for(int i = 1; i <= limit; i++) {
+        if(i % 2 != 0) {
+          cout << i << " ";
+          sum += i;
+        }
+      }
+    
+      cout << "\nJumlah Bilangan Ganjil: " << sum << endl;
+    }
+    
+    
+    // Fungsi untuk tampil bilangan genap
+    void printGenap(int limit) {
+      int sum = 0;
+      cout << "Bilangan Genap: \n";
+      for(int i = 1; i <= limit; i++) {
+        if(i % 2 == 0) {
+          cout << i << " ";
+          sum += i;
+        }
+      }
+    
+      cout << "\nJumlah Bilangan Genap: " << sum << endl;
+    }
+    
+    // Fungsi untuk tampil bilangan prima
+    void printPrima(int limit) {
+      cout << "Bilangan Prima: \n";
+      for(int i = 2; i <= limit; i++) {
+        if(isPrima(i)) {
+          cout << i << " ";
+        }
+      }
+    }
+    
+    // Fungsi untuk tampil faktor bilangan
+    void printFaktor(int n) {
+      cout << "\nFaktor dari " << n << ": ";
+      for(int i = 1; i <= n; i++) {
+        if(n % i == 0) {
+          cout << i << " ";
+        }
+      }
+    }
+    
+    int main() {
+      int limit;
+      cout << "Masukkan batas: ";
+      cin >> limit;
+    
+      printGanjil(limit);
+      printGenap(limit);
+      printPrima(limit);
+      printFaktor(limit);
+    
+      return 0;
+    }
