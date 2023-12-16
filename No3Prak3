@@ -13,18 +13,18 @@ int main() {
  cin >> pilihan;
 
     switch (pilihan) {
-        case 1:
+        case 1: //rumus luas persegi
             cout << "Masukkan sisi: "; cin >> p;
             luas = p * p;
             cout << "Luas persegi adalah: " << L << endl;
             break;
-        case 2:
+        case 2: //rumus luas persegi panjang
             cout << "Masukkan panjang persegi panjang: "; cin >> p;
             cout << "Masukkan lebar persegi panjang: "; cin >> l;
             luas = p * l;
             cout << "Luas persegi panjang adalah: " << L << endl;
             break;
-        case 3:
+        case 3: //rumus luas segitiga
             cout << "Masukkan alas segitiga: "; cin >> a;
             cout << "Masukkan tinggi segitiga: "; cin >> t;
             luas = 0.5 * a * t;
